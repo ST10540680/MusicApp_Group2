@@ -12,6 +12,14 @@ class Song (songName: String, songArtist: String, songYear: Int, songDuration: S
     var year: Int = 0
     var duration: String =  ""
 
+    // init block is used to set the values from the primary constructor
+    init {
+        this.name = songName
+        this.artist = songArtist
+        this.year = songYear
+        this.duration = songDuration
+    }
+}
     //function to play a song
     fun Play () {
         Log.v("Song", "$name playing now")
