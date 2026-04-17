@@ -20,5 +20,8 @@ class Song {
         Log.v("Song", "$name paused now")
     }
 
+    //function to stop a song
+    
+
 
 }
