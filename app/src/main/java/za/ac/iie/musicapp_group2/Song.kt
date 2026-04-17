@@ -4,4 +4,5 @@ class Song {
 
     // properties
     var name: String = ""
+    var artist: String = ""
 }
