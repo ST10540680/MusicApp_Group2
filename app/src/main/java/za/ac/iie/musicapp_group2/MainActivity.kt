@@ -1,6 +1,7 @@
 package za.ac.iie.musicapp_group2
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -13,7 +14,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //adding variables for song object's attributes
-        var songDisplayId = findViewById<TextView>(R.id.songDisplayId)
+        val songDisplayId = findViewById<TextView>(R.id.songDisplayId)
+
+        //calling the song class for a song object
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
