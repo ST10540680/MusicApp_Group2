@@ -4,7 +4,7 @@ import android.util.Log
 
 class Song {
 
-    // properties
+    // adding variables for song object's attributes
     var name: String = ""
     var artist: String = ""
     var year: Int = 0
