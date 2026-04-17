@@ -17,7 +17,9 @@ class MainActivity : AppCompatActivity() {
         val songDisplayId = findViewById<TextView>(R.id.songDisplayId)
 
         //calling the song class for a song object
-
+        Song("Ordinary", "Alex Warren", "2026", "2,5")
+        Song("So Easy", "Olivia Dean", "2023", "2,5")
+        Song("Swim", "BTS", "2026", "3,5")
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
