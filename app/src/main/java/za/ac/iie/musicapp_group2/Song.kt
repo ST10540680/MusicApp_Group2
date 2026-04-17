@@ -10,6 +10,7 @@ class Song {
     var year: Int = 0
     var duration: String =  ""
 
+    //function to play song
     fun play () {
         Log.v("Song", "$name playing now")
     }
