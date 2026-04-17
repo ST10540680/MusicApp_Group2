@@ -14,4 +14,8 @@ class Song {
     fun play () {
         Log.v("Song", "$name playing now")
     }
+
+    fun pause() {
+        Log.v("Song", "$name paused now")
+    }
 }
