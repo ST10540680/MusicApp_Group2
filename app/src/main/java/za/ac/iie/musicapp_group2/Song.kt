@@ -3,6 +3,7 @@ package za.ac.iie.musicapp_group2
 import android.util.Log
 import kotlin.time.Duration
 
+// primary constructor for song object
 class Song (songName: String, songArtist: String, songYear: Int, songDuration: String){
 
     // adding variables for song object's attributes
