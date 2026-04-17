@@ -25,5 +25,8 @@ class Song {
         Log.v("Song", "$name stopped now")
     }
 
+    //function to favorite a song
+    
+
 
 }
