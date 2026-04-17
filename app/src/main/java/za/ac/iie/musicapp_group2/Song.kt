@@ -1,7 +1,6 @@
 package za.ac.iie.musicapp_group2
 
 import android.util.Log
-import kotlin.time.Duration
 
 // primary constructor takes all the variables as parameters
 class Song (songName: String, songArtist: String, songYear: Int, songDuration: String){
@@ -11,6 +10,7 @@ class Song (songName: String, songArtist: String, songYear: Int, songDuration: S
     var artist: String = ""
     var year: Int = 0
     var duration: String =  ""
+    
 
     // init block is used to set the values from
     // the primary constructor into the properties
@@ -20,19 +20,19 @@ class Song (songName: String, songArtist: String, songYear: Int, songDuration: S
         this.year = songYear
         this.duration = songDuration
     }
-}
+
     //function to play a song
-    fun Play () {
+    fun play() {
         Log.v("Song", "$name playing now")
     }
 
     //function to pause a song
-    fun Pause() {
+    fun pause() {
         Log.v("Song", "$name paused now")
     }
 
     //function to stop a song
-    fun Stop() {
+    fun stop() {
         Log.v("Song", "$name stopped now")
     }
 
@@ -41,6 +41,4 @@ class Song (songName: String, songArtist: String, songYear: Int, songDuration: S
         Log.v("Song", "$name favorited now")
         return true
     }
-
-
 }
