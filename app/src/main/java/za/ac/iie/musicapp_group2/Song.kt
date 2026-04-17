@@ -3,7 +3,7 @@ package za.ac.iie.musicapp_group2
 import android.util.Log
 import kotlin.time.Duration
 
-// primary constructor for song object
+// primary constructor takes all the variables as parameters
 class Song (songName: String, songArtist: String, songYear: Int, songDuration: String){
 
     // adding variables for song object's attributes
@@ -12,7 +12,8 @@ class Song (songName: String, songArtist: String, songYear: Int, songDuration: S
     var year: Int = 0
     var duration: String =  ""
 
-    // init block is used to set the values from the primary constructor
+    // init block is used to set the values from
+    // the primary constructor into the properties
     init {
         this.name = songName
         this.artist = songArtist
