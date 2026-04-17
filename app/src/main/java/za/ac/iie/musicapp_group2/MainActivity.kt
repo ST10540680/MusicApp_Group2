@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        //
+        //adding variables for song object's attributes
         var songDisplayId = findViewById<TextView>(R.id.songDisplayId)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
