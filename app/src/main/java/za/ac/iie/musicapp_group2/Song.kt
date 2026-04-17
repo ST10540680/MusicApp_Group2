@@ -11,17 +11,19 @@ class Song {
     var duration: String =  ""
 
     //function to play a song
-    fun play () {
+    fun Play () {
         Log.v("Song", "$name playing now")
     }
 
     //function to pause a song
-    fun pause() {
+    fun Pause() {
         Log.v("Song", "$name paused now")
     }
 
     //function to stop a song
-    
+    fun Stop() {
+        Log.v("Song", "$name stopped now")
+    }
 
 
 }
