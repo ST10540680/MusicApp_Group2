@@ -12,8 +12,7 @@ class Song (songName: String, songArtist: String, songYear: Int, songDuration: S
     var duration: String =  ""
 
     // added secondary constructor for if user only know the name and artist, no other info is given
-    constructor(songName: String, songArtist: String) : this(songName, songArtist, 0, "")
-    
+    constructor(songName: String, songArtist: String) : this(songName, songArtist, 0, ""){}
 
     // init block is used to set the values from
     // the primary constructor into the properties
