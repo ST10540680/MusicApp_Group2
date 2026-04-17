@@ -10,12 +10,15 @@ class Song {
     var year: Int = 0
     var duration: String =  ""
 
-    //function to play song
+    //function to play a song
     fun play () {
         Log.v("Song", "$name playing now")
     }
 
+    //function to pause a song
     fun pause() {
         Log.v("Song", "$name paused now")
     }
+
+
 }
