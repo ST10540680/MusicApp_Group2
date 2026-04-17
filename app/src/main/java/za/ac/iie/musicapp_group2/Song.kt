@@ -26,7 +26,10 @@ class Song {
     }
 
     //function to favorite a song
-    
+    fun favorite() {
+        Log.v("Song", "$name favorited now")
+        return true
+    }
 
 
 }
