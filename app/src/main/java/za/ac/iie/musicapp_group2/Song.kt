@@ -1,8 +1,9 @@
 package za.ac.iie.musicapp_group2
 
 import android.util.Log
+import kotlin.time.Duration
 
-class Song {
+class Song (songName: String, songArtist: String, songYear: Int, songDuration: String){
 
     // adding variables for song object's attributes
     var name: String = ""
