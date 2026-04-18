@@ -2,25 +2,17 @@ package za.ac.iie.musicapp_group2
 
 import android.util.Log
 
-// primary constructor takes all the variables as parameters
-class Song (songName: String, songArtist: String, songYear: Int, songDuration: String){
-
-    // adding variables for song object's attributes
-    var name: String = ""
-    var artist: String = ""
-    var year: Int = 0
-    var duration: String =  ""
+// primary constructor takes all the variables as parameters and declares them as properties
+class Song(
+    var name: String,
+    var artist: String,
+    var year: Int = 0,
+    var duration: String = ""
+) {
 
     // added secondary constructor for if user only know the name and artist, no other info is given
-    constructor(songName: String, songArtist: String) : this(songName, songArtist, 0, ""){}
-
-    // initializing the variables/attributes for the song objects
-    init {
-        this.name = songName
-        this.artist = songArtist
-        this.year = songYear
-        this.duration = songDuration
-    }
+    // Note: With default values in primary constructor, this might be redundant but kept for compatibility
+    constructor(songName: String, songArtist: String) : this(songName, songArtist, 0, "")
 
     //function to play a song
     fun play() {
@@ -41,5 +33,9 @@ class Song (songName: String, songArtist: String, songYear: Int, songDuration: S
     fun favorite(): Boolean {
         Log.v("Song", "$name favorited now")
         return true
+    }
+
+    override fun toString(): String {
+        return "$name - $artist ($year) [$duration]"
     }
 }
