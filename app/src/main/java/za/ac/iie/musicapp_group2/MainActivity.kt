@@ -15,18 +15,19 @@ class MainActivity : AppCompatActivity() {
 
         // Find the TextView to display songs
         val songDisplayId = findViewById<TextView>(R.id.songDisplayId)
+        val songDisplay = ""
 
         // Create song objects
         val song1 = Song("Ordinary", "Alex Warren", 2026, "2:30")
         val song2 = Song("So Easy", "Olivia Dean", 2023, "2:45")
         val song3 = Song("Swim", "BTS", 2026, "3:15")
 
-        // Create a list of songs
-        val songList = listOf(song1, song2, song3)
+        // Create an array to hold the songs
+        val song = arrayOf(song1, song2, song3)
 
         // Build a string to display all songs
         val displayText = StringBuilder()
-        for (song in songList) {
+        for (song in song) {
             displayText.append(song.toString()).append("\n\n")
         }
 
